@@ -2,7 +2,7 @@
 
 **Author:** BlackScriptor  
 **Game:** Survival Log (SLGame)  
-**Framework:** MelonLoader (net6)
+**Framework:** MelonLoader (v0.7.3)
 
 A powerful, dynamic in-game item spawner and trainer for *Survival Log*. This mod bypasses the game's strict IL2CPP UI layout stripping by using a fully custom absolute-positioned IMGUI overlay and a raw hardware input parser. It reads the game's internal ConfigManager memory to dynamically dump and list items, bypassing the need for manual configuration files.
 
@@ -17,13 +17,12 @@ A powerful, dynamic in-game item spawner and trainer for *Survival Log*. This mo
 
 ### Step 1: Install MelonLoader
 *Survival Log* runs on the IL2CPP Unity engine, so you need MelonLoader to inject mods.
-1. Download the **MelonLoader Installer** from their [official GitHub page](https://github.com/LavaGang/MelonLoader/releases/latest).
+1. Download the **MelonLoader Installer** from their [official GitHub page](https://github.com/LavaGang/MelonLoader/releases).
 2. Run MelonLoader.Installer.exe.
 3. Click the **SELECT** button and navigate to wherever you installed *Survival Log*. Select the main Survival Log.exe (or SLGame.exe) file.
-4. Uncheck the "Latest" box next to the version dropdown if needed, but ensure the architecture is set to **x64**. 
-5. **CRITICAL:** Go to the Settings tab in the installer and ensure it is set to install the **.NET 6 (net6)** version, *not* .NET Framework 4.8.
-6. Click **INSTALL**. 
-7. Launch *Survival Log* normally once. You should see a black console window pop up while the game loads. This generates the necessary Mods folder. Once you reach the main menu, close the game.
+4. **CRITICAL:** Uncheck the "Latest" box next to the version dropdown, and manually select **version 0.7.3**. Ensure the architecture is set to **x64**. 
+5. Click **INSTALL**. 
+6. Launch *Survival Log* normally once. You should see a black console window pop up while the game loads. This generates the necessary Mods folder. Once you reach the main menu, close the game.
 
 ### Step 2: Install the Mod
 1. Download SurvivalTrainer.dll from the [Releases](Releases/) folder of this repository.
