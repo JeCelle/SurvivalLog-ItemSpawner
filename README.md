@@ -32,7 +32,7 @@ A powerful, dynamic in-game item spawner and trainer for *Survival Log*. This mo
 5. Launch the game!
 
 ## How to Use
-- Press **Insert** or **F5** in-game to toggle the Spawner Menu.
+- Press **Insert** or **F8** in-game to toggle the Spawner Menu.
 - Click **Load Items from Game Memory** to populate the list.
 - Use the **Search** box to find items by their English names (e.g., "Rifle", "Ammo", "Meat").
 - Select your drop amount using the +/- buttons.

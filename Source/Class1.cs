@@ -41,18 +41,9 @@ namespace SurvivalCheatTrainer
 
         private List<DropButtonHitbox> dropHitboxes = new List<DropButtonHitbox>();
 
-        // Custom Dragging and Input Tracking
-        private bool isDragging = false;
-        private Vector2 dragOffset;
-        private bool clickStartedInMenu = false;
-        private bool wasLeftClickHeld = false;
-
-        // Absolute Rectangles for Custom Input
-        private Rect rLoad, rSearch, rClear, rAmtM10, rAmtM1, rAmtP1, rAmtP10, rPrev, rNext;
-
         private Dictionary<int, string> englishTranslations = new Dictionary<int, string>()
         {
-            { 1, "Biscuit" },
+{ 1, "Biscuit" },
             { 8, "Medicine" },
             { 2001, "Biscuit" },
             { 2002, "Biscuit" },
@@ -1635,9 +1626,22 @@ namespace SurvivalCheatTrainer
             { 13887, "Meat" },
         };
 
+
+        
+
+        // Custom Dragging and Input Tracking
+        private bool isDragging = false;
+        private Vector2 dragOffset;
+        private bool clickStartedInMenu = false;
+        private bool wasLeftClickHeld = false;
+
+        // Absolute Rectangles for Custom Input
+        private Rect rLoad, rSearch, rClear, rAmtM10, rAmtM1, rAmtP1, rAmtP10, rPrev, rNext;
+
+        
         public override void OnUpdate()
         {
-            if (Input.GetKeyDown(KeyCode.Insert) || Input.GetKeyDown(KeyCode.F5))
+            if (Input.GetKeyDown(KeyCode.Insert) || Input.GetKeyDown(KeyCode.F8))
             {
                 showMenu = !showMenu;
                 if (showMenu) 
@@ -1728,7 +1732,7 @@ namespace SurvivalCheatTrainer
                 GUI.backgroundColor = new Color(0.1f, 0.1f, 0.1f, 1.0f);
                 
                 // Draw background manually
-                GUI.Box(windowRect, "Survival Log Spawner (F5/Insert to Hide)");
+                GUI.Box(windowRect, "Survival Log Spawner (F8/Insert to Hide)");
 
                 float wx = windowRect.x;
                 float wy = windowRect.y;
