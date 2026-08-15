@@ -14,10 +14,22 @@ A powerful, dynamic in-game item spawner and trainer for *Survival Log*. This mo
 - **Draggable UI:** Grab the top 30 pixels of the menu to drag it anywhere on your screen.
 
 ## Installation
-1. Download and install [MelonLoader](https://github.com/LavaGang/MelonLoader) (Make sure you use the **.NET 6 (net6)** version).
-2. Run *Survival Log* once to let MelonLoader generate its folders, then close the game.
-3. Download SurvivalTrainer.dll from the [Releases](Releases/) folder of this repository.
-4. Place SurvivalTrainer.dll inside the Mods folder located in your *Survival Log* game directory.
+
+### Step 1: Install MelonLoader
+*Survival Log* runs on the IL2CPP Unity engine, so you need MelonLoader to inject mods.
+1. Download the **MelonLoader Installer** from their [official GitHub page](https://github.com/LavaGang/MelonLoader/releases/latest).
+2. Run MelonLoader.Installer.exe.
+3. Click the **SELECT** button and navigate to wherever you installed *Survival Log*. Select the main Survival Log.exe (or SLGame.exe) file.
+4. Uncheck the "Latest" box next to the version dropdown if needed, but ensure the architecture is set to **x64**. 
+5. **CRITICAL:** Go to the Settings tab in the installer and ensure it is set to install the **.NET 6 (net6)** version, *not* .NET Framework 4.8.
+6. Click **INSTALL**. 
+7. Launch *Survival Log* normally once. You should see a black console window pop up while the game loads. This generates the necessary Mods folder. Once you reach the main menu, close the game.
+
+### Step 2: Install the Mod
+1. Download SurvivalTrainer.dll from the [Releases](Releases/) folder of this repository.
+2. Navigate to your *Survival Log* game installation folder.
+3. You should now see a folder named Mods (created by MelonLoader in Step 1). 
+4. Drop SurvivalTrainer.dll directly into the Mods folder.
 5. Launch the game!
 
 ## How to Use
@@ -29,8 +41,10 @@ A powerful, dynamic in-game item spawner and trainer for *Survival Log*. This mo
 - If the UI ever glitches, press **F1** as a hardcoded fallback to drop a piece of Glass.
 
 ## Disclaimer & Warning
-**⚠️ Use at your own risk!**
-This mod interacts heavily with raw memory and bypasses several internal game loops using reflection. It is not perfect. 
+**⚠️ USE AT YOUR OWN RISK!**  
+To be completely honest, the code holding this together is currently in a **"duct tape and spit"** kind of stage. Because the game developers aggressively stripped the UI engine, this mod interacts heavily with raw memory and bypasses several internal game loops using aggressive workarounds.
+
+Expect glitches, expect bugs, and use carefully:
 - It may cause physics glitches if you spawn hundreds of items at once.
 - Game updates that change internal memory structures may break the mod.
-- **I (BlackScriptor) am not responsible for any corrupted save files, game crashes, or issues you may encounter while using this.** Always back up your save files before using trainers!
+- **I (BlackScriptor) will not be responsible for any corrupted save files, game crashes, or issues you may encounter because of this.** Always back up your save files before experimenting!
