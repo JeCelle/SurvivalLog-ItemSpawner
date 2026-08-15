@@ -37,7 +37,6 @@ A powerful, dynamic in-game item spawner and trainer for *Survival Log*. This mo
 - Use the **Search** box to find items by their English names (e.g., "Rifle", "Ammo", "Meat").
 - Select your drop amount using the +/- buttons.
 - Click **Drop**. The items will instantly drop at your feet!
-- If the UI ever glitches, press **F1** as a hardcoded fallback to drop a piece of Glass.
 
 ## Disclaimer & Warning
 **⚠️ USE AT YOUR OWN RISK!**  
