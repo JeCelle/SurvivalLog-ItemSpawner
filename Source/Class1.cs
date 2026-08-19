@@ -358,16 +358,16 @@ namespace SurvivalCheatTrainer
             { 20219, "WordPad (not enabled yet)" },
             { 20220, "paper airplane" },
             { 20221, "craft bouquet" },
-            { 20300, "Door panel repair materials" },
-            { 20301, "window repair materials" },
-            { 20310, "Universal reinforcement" },
-            { 20320, "lock pick" },
-            { 20330, "crowbar" },
+            { 20300, "Door Repair Kit" },
+            { 20301, "Window Repair Kit" },
+            { 20310, "All-Purpose Strengthener" },
+            { 20320, "Lockpick" },
+            { 20330, "Crowbar" },
             { 20340, "Noisemaker" },
             { 20350, "Tool pliers" },
             { 20360, "Exquisite iron sheet" },
-            { 20361, "iron rod" },
-            { 20362, "iron parts" },
+            { 20361, "Iron rod" },
+            { 20362, "Iron parts" },
             { 24111, "Girl hand knitted amulet" },
             { 25000, "live capture cage" },
             { 8001, "Cartridge gas cylinder" },
@@ -2911,7 +2911,7 @@ namespace SurvivalCheatTrainer
 
             if (showMenu)
             {
-                Vector2 mousePos = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+                Vector2 mousePos = GUIUtility.ScreenToGUIPoint(Input.mousePosition);
                 
                 if (isLeftClickDown)
                 {
