@@ -21,8 +21,8 @@
     <Reference Include="UnityEngine.TextRenderingModule">
       <Private>False</Private><HintPath>../lib/UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
-    <Reference Include="Il2Cppmscor../lib">
-      <Private>False</Private><HintPath>../lib/Il2Cppmscor../lib.dll</HintPath>
+    <Reference Include="Il2Cppmscorlib">
+      <Private>False</Private><HintPath>../lib/Il2Cppmscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Il2CppInterop.Runtime">
       <Private>False</Private><HintPath>../lib/Il2CppInterop.Runtime.dll</HintPath>
