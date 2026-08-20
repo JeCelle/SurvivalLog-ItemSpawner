@@ -36,6 +36,7 @@ namespace SurvivalCheatTrainer
         private bool itemsLoaded = false;
         private string statusMessage = "Press 'Load Items' to begin.";
         private int currentPage = 0;
+        private int totalPages;
         private int itemsPerPage = 10;
         private bool isTypingSearch = false;
 
@@ -65,7 +66,7 @@ namespace SurvivalCheatTrainer
             { 2106, "Shrimp and fish noodles" },
             { 2107, "Individual self-heating rice" },
             { 2108, "Instant oatmeal" },
-            { 2109, "Harbin red sausage" },
+            { 2109, "Smoked Sausage" },
             { 2110, "Peking duck roll" },
             { 2111, "Vacuum pork knuckle" },
             { 2112, "Pickled pepper chicken feet" },
@@ -166,11 +167,11 @@ namespace SurvivalCheatTrainer
             { 2403, "Adrenaline hormones" },
             { 2404, "Stimulants" },
             { 2405, "Antibiotics" },
-            { 2406, "Antipyretics" },
+            { 2406, "Fever Meds" },
             { 2407, "Diarrhea Meds" },
             { 2408, "Painkillers" },
             { 2409, "Powerful tranquilizer" },
-            { 2410, "Anti-anxiety medication" },
+            { 2410, "Anxiety Meds" },
             { 2411, "Soothing Capsules" },
             { 2500, "Donuts" },
             { 2501, "Pasta" },
@@ -243,10 +244,10 @@ namespace SurvivalCheatTrainer
             { 9012, "Post-It #2" },
             { 9013, "Post-It #3" },
             { 9020, "Workbench User Manual" },
-            { 9030, "canned tuna" },
+            { 9030, "Canned tuna" },
             { 9031, "Half a pack of potato chips" },
-            { 9032, "chocolate bar" },
-            { 9049, "old recorder" },
+            { 9032, "Chocolate Bar" },
+            { 9049, "Old Recorder" },
             { 10001, "Rare props 1" },
             { 10002, "Rare props 2" },
             { 10003, "Rare props 3" },
@@ -258,7 +259,7 @@ namespace SurvivalCheatTrainer
             { 10009, "Rare props 9" },
             { 10010, "Rare props 10" },
             { 11001, "Plastic steel dumbbell" },
-            { 11002, "handheld game console" },
+            { 11002, "Handheld Game Console" },
             { 11003, "Food parcel" },
             { 11004, "Full box of functional drinks" },
             { 11005, "Green algae culture tank" },
@@ -1109,13 +1110,13 @@ namespace SurvivalCheatTrainer
             { 30005, "Mallard" },
             { 30006, "squirrel" },
             { 25001, "Simple mouse trap" },
-            { 25002, "live capture cage" },
+            { 25002, "Live capture cage" },
             { 25003, "Simple Bird Catching Net" },
-            { 26001, "sandbag wrapping" },
-            { 26002, "Spiked Barrier Package" },
-            { 26003, "Grid Package" },
-            { 26004, "Mechanical chainsaw Package" },
-            { 26005, "Molotov cocktail" },
+            { 26001, "Sandbag Wrapping" },
+            { 26002, "Spike Barrier Package" },
+            { 26003, "Electric Trap Package" },
+            { 26004, "Mechanical Chainsaw Package" },
+            { 26005, "Molotov Cocktail" },
             { 30007, "black rat" },
             { 30008, "squirrel" },
             { 30009, "gecko" },
@@ -1152,7 +1153,13 @@ namespace SurvivalCheatTrainer
             { 24120, "A wad of candy wrappers" },
             { 24121, "polished glass marbles" },
             { 24122, "unfinished letter" },
-            { 24123, "note" },
+            { 24123, "Note" },
+            { 24124, "Antibiotics" },
+            { 24125, "Smoked Sausage" },
+            { 24126, "Marble Mosaic Trinket" },
+            { 24127, "Tin Strip Wind Chime" },
+            { 24128, "Jar of Candy-Wrapper Stars" },
+            { 24129, "Marble Mosaic Trinket" },
             { 48501, "She cooked roasted pigeon" },
             { 48801, "The snake bone soup she made" },
             { 52005, "The braised egg bibimbap she made" },
@@ -2409,14 +2416,36 @@ namespace SurvivalCheatTrainer
             { 14091, "Ultra-large power storage device Package" },
             { 14092, "Extra Large Fuel Generator Package" },
             { 14093, "Extra Large Rat Cage Package" },
-            { 30021, "guinea pig" },
-            { 30022, "white mouse" },
+            { 14094, "Tool Cabinet Package" },
+            { 14095, "Shredder Package" },
+            { 30021, "Guinea Pig" },
+            { 30022, "White Mouse" },
+            { 30023, "Guinea Pig (Dead)" },
+            { 30024, "White Mouse (Dead)" },
             { 3021, "Barricade Building Guide" },
             { 3022, "Home First Aid Handbook" },
             { 3023, "wartime diet" },
             { 3024, "Doomsday extra-bound volume" },
             { 3025, "Game Handling Guidelines" },
             { 3026, "Diary of an unknown person" },
+            { 3027, "Crafting Scrap Notes" },
+            { 3028, "Farming Scrap Notes" },
+            { 3029, "Cooking Scrap Notes" },
+            { 3030, "Trapping Scrap Notes" },
+            { 3031, "Exploration Scrap Notes" },
+            { 3032, "Defense Scrap Notes" },
+            { 3033, "Organized Defense Notes" },
+            { 3034, "Complete Crafting Manuscript" },
+            { 3035, "Complete Farming Manuscript" },
+            { 3036, "Complete Cooking Manuscript" },
+            { 3037, "Complete Trapping Manuscript" },
+            { 3038, "Complete Exploration Manuscript" },
+            { 3039, "Complete Defense Manuscript" },
+            { 3040, "Organized Crafting Manuscript" },
+            { 3041, "Organized Farming Manuscript" },
+            { 3042, "Organized Cooking Manuscript" },
+            { 3043, "Organized Trapping Manuscript" },
+            { 3044, "Organized Exploration Manuscript" },
             { 9050, "Schedule" },
             { 9051, "The last receipt" },
             { 9052, "Purchase restriction notice" },
@@ -2597,10 +2626,10 @@ namespace SurvivalCheatTrainer
             { 53620, "She made stir-fried snake shreds with chives" },
             { 53624, "The three-bacteria snake soup she made" },
             { 53628, "Her fried turtle dove with cauliflower" },
-            { 15040, "creeper Seeds" },
-            { 20107, "vines" },
+            { 15040, "Creeper Seeds" },
+            { 20107, "Vines" },
             { 9062, "Patient roster·Fragmented pages" },
-            { 9063, "patient diary" },
+            { 9063, "Patient diary" },
             { 9064, "A bunch of messages from family members" },
             { 9065, "Delivery stub·signature" },
             { 9066, "Delivery stub·cold chain" },
@@ -2866,9 +2895,6 @@ namespace SurvivalCheatTrainer
             { 13899, "Seafood Don (failed)" },
         };
 
-
-        
-
         // Custom Dragging and Input Tracking
         private bool isDragging = false;
         private Vector2 dragOffset;
@@ -2876,8 +2902,7 @@ namespace SurvivalCheatTrainer
         private bool wasLeftClickHeld = false;
 
         // Absolute Rectangles for Custom Input
-        private Rect rLoad, rSearch, rClear, rAmtM10, rAmtM1, rAmtP1, rAmtP10, rPrev, rNext;
-
+        private Rect rLoad, rSearch, rClear, rAmtM10, rAmtM1, rAmtP1, rAmtP10, rPrev, rNext, rLast;
         
         public override void OnUpdate()
         {
@@ -2934,6 +2959,8 @@ namespace SurvivalCheatTrainer
                         else if (rAmtP10.Contains(mousePos)) { amount += 10; }
                         else if (rPrev.Contains(mousePos) && currentPage > 0) { currentPage--; }
                         else if (rNext.Contains(mousePos)) { currentPage++; }
+                        else if (rLast.Contains(mousePos)) { currentPage = Math.Max(0, totalPages - 1); }
+
                         else
                         {
                             foreach (var hit in dropHitboxes)
@@ -2988,6 +3015,7 @@ namespace SurvivalCheatTrainer
                 rAmtP10 = new Rect(wx + 380, wy + 120, 40, 30);
                 rPrev   = new Rect(wx + 180, wy + 160, 100, 30);
                 rNext   = new Rect(wx + 290, wy + 160, 100, 30);
+                rLast   = new Rect(wx + 400, wy + 160, 100, 30);
 
                 // Draw the custom buttons using GUI.Box with text
                 GUI.Box(rLoad, "Load Items from Game Memory");
@@ -3048,13 +3076,14 @@ namespace SurvivalCheatTrainer
                         ).ToList();
                     }
 
-                    int totalPages = (int)Math.Ceiling((double)filtered.Count / itemsPerPage);
+                    totalPages = (int)Math.Ceiling((double)filtered.Count / itemsPerPage);
                     if (currentPage >= totalPages) currentPage = Math.Max(0, totalPages - 1);
 
                     // --- PAGINATION HEADER ---
                     GUI.Label(new Rect(wx + 20, wy + 160, 150, 30), $"Page {currentPage + 1} of {Math.Max(1, totalPages)}");
                     GUI.Box(rPrev, "<- Prev");
                     GUI.Box(rNext, "Next ->");
+                    GUI.Box(rLast, "Last Page >>"); 
 
                     // --- ITEMS GRID ---
                     int startIndex = currentPage * itemsPerPage;

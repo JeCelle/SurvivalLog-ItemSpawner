@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Setup .NET 6
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: '6.0.x'
 
@@ -29,7 +29,7 @@ jobs:
         run: dotnet build Source/SurvivalTrainer.csproj --configuration Release --no-restore
 
       - name: Upload DLL
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: SurvivalTrainer
           path: Source/bin/Release/net6.0/SurvivalTrainer.dll
