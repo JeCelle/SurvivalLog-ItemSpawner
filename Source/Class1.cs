@@ -67,7 +67,7 @@ namespace SurvivalCheatTrainer
             { 2107, "Individual self-heating rice" },
             { 2108, "Instant oatmeal" },
             { 2109, "Smoked Sausage" },
-            { 2110, "Peking duck roll" },
+            { 2110, "Duck Wrap" },
             { 2111, "Vacuum pork knuckle" },
             { 2112, "Pickled pepper chicken feet" },
             { 2113, "Couple's lung slices" },
@@ -91,13 +91,13 @@ namespace SurvivalCheatTrainer
             { 2131, "energy drink" },
             { 2132, "70% dark chocolate" },
             { 2133, "Original potato chips" },
-            { 2134, "Spicy Dried Tofu" },
+            { 2134, "Spicy Tofu" },
             { 2135, "Fruit hard candy" },
             { 2136, "Classic Instant Coffee" },
             { 2137, "Scotch whiskey" },
             { 2138, "Comprehensive nut bag" },
             { 2139, "First aid fruit candy" },
-            { 2140, "vanilla ice cream" },
+            { 2140, "Ice Cream" },
             { 2141, "Handmade ginger candy" },
             { 2142, "Natural gas soaked in water" },
             { 2143, "Marshmallow" },
@@ -164,7 +164,7 @@ namespace SurvivalCheatTrainer
             { 2400, "Bandage" },
             { 2401, "Military Medical Kit" },
             { 2402, "Multivitamins" },
-            { 2403, "Adrenaline hormones" },
+            { 2403, "Adrenaline" },
             { 2404, "Stimulants" },
             { 2405, "Antibiotics" },
             { 2406, "Fever Meds" },
@@ -233,7 +233,7 @@ namespace SurvivalCheatTrainer
             { 3010, "The young master's self-cultivation" },
             { 3011, "Introduction to woodworking" },
             { 3012, "Gardening Handbook" },
-            { 3013, "home-cooked recipes" },
+            { 3013, "Home-Style Recipes" },
             { 3014, "Hunting Notes" },
             { 3015, "Urban Adventure Guide" },
             { 9001, "Dry and severed fingers" },
@@ -348,7 +348,7 @@ namespace SurvivalCheatTrainer
             { 20207, "Solitaire(not enabled yet)" },
             { 20208, "Chess (not yet enabled)" },
             { 20209, "Reinforcement consumables (not activated yet)" },
-            { 20210, "Electrical components" },
+            { 20210, "Electronic Components" },
             { 20211, "Mousetrap (not activated yet)" },
             { 20212, "Fuel (not yet enabled)" },
             { 20213, "Thousand Paper Cranes: Make a Wish" },
@@ -365,7 +365,7 @@ namespace SurvivalCheatTrainer
             { 20320, "Lockpick" },
             { 20330, "Crowbar" },
             { 20340, "Noisemaker" },
-            { 20350, "Tool pliers" },
+            { 20350, "Pliers" },
             { 20360, "Exquisite iron sheet" },
             { 20361, "Iron rod" },
             { 20362, "Iron parts" },
@@ -1629,15 +1629,15 @@ namespace SurvivalCheatTrainer
             { 14015, "Terracotta Flowerpot (Large) Package" },
             { 14016, "Pest-Resistant Flowerpot (Medium) Package" },
             { 14017, "Weed-Resistant Flowerpot (Large) Package" },
-            { 14018, "Plant light incubator (large) Package" },
+            { 14018, "Plant Grow Box (Large) Package" },
             { 14019, "Full Spectrum Hydroponic Station (Large) Package" },
-            { 14020, "solid wood bed Package" },
-            { 14021, "Massage chair Package" },
-            { 14022, "bathtub wrap" },
+            { 14020, "Solid wood bed Package" },
+            { 14021, "Massage Chair Package" },
+            { 14022, "Bathtub Wrap" },
             { 9014, "Note in the truck" },
             { 41000, "Military compressed biscuits" },
             { 41001, "Imported chocolate" },
-            { 41002, "Home-cooked lunch box" },
+            { 41002, "Home-Style Bento" },
             { 41003, "old military badge" },
             { 41004, "University admission notice" },
             { 41005, "Warehouse access card" },
@@ -2344,11 +2344,11 @@ namespace SurvivalCheatTrainer
             { 14064, "Small fuel generator Package" },
             { 14065, "Medium Size Fuel Generator Package" },
             { 14066, "Home UPS Package" },
-            { 14067, "Plant light incubator (small) Package" },
-            { 14068, "Plant light incubator (medium) Package" },
-            { 14069, "Constant temperature incubator (small) Package" },
-            { 14070, "Constant temperature incubator (medium) Package" },
-            { 14071, "Constant temperature incubator (large) Package" },
+            { 14067, "Plant Grow Box (Small) Package" },
+            { 14068, "Plant Grow Box (Medium) Package" },
+            { 14069, "Temperature-Stable Grow Box (Small) Package" },
+            { 14070, "Temperature-Stable Grow Box  (Medium) Package" },
+            { 14071, "Temperature-Stable Grow Box  (Large) Package" },
             { 14072, "Terracotta Flower Pot (Small) Package" },
             { 14073, "Terracotta Flower Pot (Medium) Package" },
             { 14074, "Fertile Planter Pot (Small) Package" },
@@ -2407,13 +2407,13 @@ namespace SurvivalCheatTrainer
             { 12459, "Tomato juice (regular)" },
             { 12460, "tomato juice (failed)" },
             { 52457, "Tomato juice she made" },
-            { 11009, "toothbrush" },
-            { 11010, "toothpaste" },
-            { 11011, "soap" },
-            { 11012, "towel" },
-            { 11013, "comb" },
-            { 2913, "a cup of hot water" },
-            { 14091, "Ultra-large power storage device Package" },
+            { 11009, "Toothbrush" },
+            { 11010, "Toothpaste" },
+            { 11011, "Soap" },
+            { 11012, "Towel" },
+            { 11013, "Comb" },
+            { 2913, "A cup of hot water" },
+            { 14091, "Extra Large Power Storage Device Package" },
             { 14092, "Extra Large Fuel Generator Package" },
             { 14093, "Extra Large Rat Cage Package" },
             { 14094, "Tool Cabinet Package" },
@@ -2931,7 +2931,9 @@ namespace SurvivalCheatTrainer
             if (isLeftClickUp)
             {
                 clickStartedInMenu = false;
-                isDragging = false;
+                // isDragging is now owned by OnGUI's Event.current handling (MouseUp there
+                // clears it). Not touching it here avoids a flaky Input.GetMouseButton read
+                // ending a drag a frame early or out of sync with the GUI event stream.
             }
 
             if (showMenu)
@@ -2944,11 +2946,16 @@ namespace SurvivalCheatTrainer
                     {
                         clickStartedInMenu = true;
 
+                        // NOTE: Dragging is now handled in OnGUI via Event.current (see OnGUI),
+                        // not here. Input.GetMouseButton-based tracking + the manual
+                        // Screen.height Y-flip is an extra place coordinates can desync from
+                        // real IMGUI space; Event.current avoids that entirely. We still treat
+                        // the title bar as "no other button here" so it doesn't fall through
+                        // to the drop-item hit test below.
                         Rect titleBar = new Rect(windowRect.x, windowRect.y, windowRect.width, 30);
                         if (titleBar.Contains(mousePos))
                         {
-                            isDragging = true;
-                            dragOffset = new Vector2(windowRect.x - mousePos.x, windowRect.y - mousePos.y);
+                            // handled in OnGUI
                         }
                         else if (rLoad.Contains(mousePos)) { LoadItems(); currentPage = 0; }
                         else if (rSearch.Contains(mousePos)) { isTypingSearch = !isTypingSearch; }
@@ -2976,11 +2983,10 @@ namespace SurvivalCheatTrainer
                     }
                 }
 
-                if (isDragging)
-                {
-                    windowRect.x = mousePos.x + dragOffset.x;
-                    windowRect.y = mousePos.y + dragOffset.y;
-                }
+                // NOTE: dragging itself (updating windowRect while the mouse moves) is now
+                // handled entirely in OnGUI via Event.current — see the "DRAG HANDLING" block
+                // there. Keeping a second writer here would fight it, since that path uses a
+                // different offset convention (GUI space, no Y-flip).
 
                 if (clickStartedInMenu)
                 {
@@ -3001,6 +3007,33 @@ namespace SurvivalCheatTrainer
                 
                 // Draw background manually
                 GUI.Box(windowRect, "Survival Log Spawner (F8/Insert to Hide)");
+
+                // --- DRAG HANDLING (native IMGUI Event system) ---
+                // Runs in the same coordinate space GUI.Box/windowRect already use, so there's
+                // no manual Y-flip and no dependency on Input.GetMouseButton (which some IL2Cpp
+                // games leave unreliable when the New Input System is active). This is the same
+                // mechanism GUI.DragWindow uses under the hood.
+                Event guiEvent = Event.current;
+                Rect titleBarGUI = new Rect(windowRect.x, windowRect.y, windowRect.width, 30);
+
+                if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0 && titleBarGUI.Contains(guiEvent.mousePosition))
+                {
+                    isDragging = true;
+                    dragOffset = guiEvent.mousePosition - new Vector2(windowRect.x, windowRect.y);
+                    guiEvent.Use();
+                    MelonLogger.Msg($"[Drag] Start at {guiEvent.mousePosition}, windowRect={windowRect}");
+                }
+                else if (guiEvent.type == EventType.MouseDrag && isDragging)
+                {
+                    windowRect.x = guiEvent.mousePosition.x - dragOffset.x;
+                    windowRect.y = guiEvent.mousePosition.y - dragOffset.y;
+                    guiEvent.Use();
+                }
+                else if (guiEvent.type == EventType.MouseUp && guiEvent.button == 0 && isDragging)
+                {
+                    isDragging = false;
+                    MelonLogger.Msg($"[Drag] End, windowRect={windowRect}");
+                }
 
                 float wx = windowRect.x;
                 float wy = windowRect.y;
