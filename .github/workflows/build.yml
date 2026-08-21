@@ -27,6 +27,12 @@ jobs:
       - name: Build
         run: dotnet build Source/SurvivalTrainer.csproj --configuration Release
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: SurvivalTrainer
+          path: Source/bin/Release/net6.0/SurvivalTrainer.dll
+
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v3
